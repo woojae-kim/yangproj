@@ -1,12 +1,7 @@
-//create a variable for each image
-const image1 = document.getElementById("img1");
-const image2 = document.getElementById("img2");
-const image3 = document.getElementById("img3");
-const image4 = document.getElementById("img4");
-const image5 = document.getElementById("img5"); 
 
 //create an array of the images
-const imgNum = [image1, image2, image3, image4, image5];
+const imgNum = [document.getElementById("img1"), document.getElementById("img2"), 
+document.getElementById("img3"), document.getElementById("img4"), document.getElementById("img5")];
 
 //function for getting a random number between 0 and max
 function getRandomInt(max) {
@@ -20,7 +15,6 @@ for (let i = 0; i < imgNum.length; i++) {
 }
 
 //infinitley generate a new number and show a photo
-
   let randInt = getRandomInt(imgNum.length);
   
   //hide a photo in the array based on the random integer
